@@ -1,0 +1,29 @@
+{
+  "name": "kresz",
+  "version": "1.0.0",
+  "description": "Minimal Electron-alapu KRESZ oktato alkalmazas (magyar nyelv)",
+  "main": "main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "keywords": [
+    "kresz",
+    "electron",
+    "oktatas",
+    "magyar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barneyson55/kresz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barneyson55/kresz/issues"
+  },
+  "homepage": "https://github.com/barneyson55/kresz#readme",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  }
+}

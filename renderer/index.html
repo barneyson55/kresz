@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KRESZ Oktató - Interaktív Gyakorlat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="pill" id="progress">1/1</div>
+          <div class="pill pill-muted" id="type">Egyirányú</div>
+          <div class="pill pill-muted" id="difficulty">alap</div>
+          <div class="pill pill-muted" id="pace">normál</div>
+          <div class="pill pill-timer is-hidden" id="timer">00:00</div>
+        </div>
+        <h1 class="question" id="question">Kérdés</h1>
+        <div class="topbar-right">
+          <button class="ghost" id="retry" type="button">Újrapróba</button>
+        </div>
+      </header>
+
+      <main class="stage">
+        <section class="scene-card" id="scene-card">
+          <div class="scene-header">
+            <span class="scene-title">Valódi helyzet</span>
+            <span class="scene-hint">Válassz 1-4 billentyűvel is</span>
+          </div>
+          <div class="scene-canvas" id="scene"></div>
+          <div class="scene-legend" id="legend"></div>
+        </section>
+
+        <aside class="options-card" id="options-card">
+          <div class="options-header">
+            <h2>Válaszlehetőségek</h2>
+            <span class="options-sub">Hibás válasz után újra próbálható</span>
+          </div>
+          <div class="options-list" id="options"></div>
+          <div class="feedback" id="feedback"></div>
+        </aside>
+      </main>
+
+      <footer class="details-card" id="details-card">
+        <div class="details-header">
+          <h3>Helyzet leírása</h3>
+          <span class="details-sub">Időben és térben elhelyezve, definíciókkal</span>
+        </div>
+        <p class="details-text" id="description"></p>
+        <div class="definitions" id="definitions"></div>
+      </footer>
+    </div>
+
+    <script src="scenes.js"></script>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
