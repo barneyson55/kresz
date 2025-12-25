@@ -1,62 +1,63 @@
-﻿# KRESZ Oktató – interaktív Electron alkalmazás
+# KRESZ Oktato ? interaktiv Electron alkalmazas
 
-Magyar nyelvű, vizuális, minimalista KRESZ-oktató app, amely a bonyolultabb egyirányú kereszteződéseket és gyors ütemű közlekedési helyzeteket gyakoroltatja. A feladatok újrapróbálhatók, a helyes válasz automatikus továbblépést indít.
+Magyar nyelvu, vizualis, minimalista KRESZ-oktato app, amely a bonyolultabb egyiranyu keresztezodeseket es gyors utemu kozlekedesi helyzeteket gyakoroltatja. A feladatok ujraprobalhatok, a helyes valasz automatikus tovabblepest indit.
 
-## Fő jellemzők
-- Interaktív, vizuális feladatok SVG illusztrációkkal.
-- Egyirányú kereszteződések: alap → összetett feladatsorok.
-- Gyors ütemű szituációk időzítővel (pl. vasúti átjáró előtti döntés).
-- Hibás válasz után azonnal újrapróbálható, helyes válasz után automatikus továbblépés.
-- Magyar nyelvű kérdések, leírások és definíciók.
+## Fo jellemzok
+- Interaktiv, vizualis feladatok SVG illusztraciokkal.
+- Egyiranyu keresztezodesek: alap -> osszetett feladatsorok.
+- Gyors utemu szituaciok idozitovel (pl. vasuti atjaro elotti dontes).
+- Hibas valasz utan azonnal ujraprobalhato, helyes valasz utan automatikus tovabblepes.
+- Magyar nyelvu kerdesek, leirasok es definiciok.
 
-## Képernyő felépítése
-- **Felül (középen):** a kérdés.
-- **Középen (bal):** a valós helyzet illusztrációja (SVG).
-- **Középen (jobb):** válaszlehetőségek (1–4 billentyűvel is választható).
-- **Alul:** a helyzet részletes leírása, időbeli/térbeli magyarázatok, definíciók.
+## Kepernyo felepitese
+- **Felul (kozepen):** a kerdes.
+- **Kozepen (bal):** a valos helyzet illusztracioja (SVG).
+- **Kozepen (jobb):** valaszlehetosegek (1-4 billentyuvel is valaszthato).
+- **Alul:** a helyzet reszletes leirasa, idobeli/terbeli magyarazatok, definiciok.
 
-## Gyors indítás (Windows)
-### Kézi futtatás
+## Gyors inditas (Windows)
+### Kezi futtatas
 ```bash
 npm install
 npm run start
 ```
 
-### Gyorsbillentyű (AutoHotkey v2)
-A projekt tartalmaz egy AHK v2 scriptet, amely a `Ctrl+Alt+F10` billentyűre indítja az appot.
+### Gyorsbillentyu (AutoHotkey v2)
+A projekt tartalmaz egy AHK v2 scriptet, amely a `Ctrl+Alt+F10` billentyure inditja az appot.
 
-1. Telepítsd az AutoHotkey v2-t.
-2. Futtasd a `kresz-hotkey.ahk` fájlt.
+1. Telepitsd az AutoHotkey v2-t.
+2. Futtasd a `kresz-hotkey.ahk` fajlt.
 3. Nyomd meg: `Ctrl+Alt+F10`.
 
-A script a `run-kresz.bat` fájlt indítja, amely elvégzi a `npm install`, `npm rebuild`, majd a futtatást.
+A script a `run-kresz.bat` fajlt inditja, amely elvegzi a `npm install`, `npm rebuild`, majd a futtatast.
 
-### Repo klónozás (Windows)
-A `clone-kresz.bat` a GitHub repót klónozza. Opcionálisan célmappát is megadhatsz.
+### Repo klonozas (Windows)
+A `clone-kresz.bat` a GitHub repot klonozza. Opcionalisan celmappat is megadhatsz.
 
 ```bat
 clone-kresz.bat D:\dev\kresz
 ```
 
-Klónozás után futtasd a `run-kresz.bat` fájlt a célmappából.
+Klonozas utan futtasd a `run-kresz.bat` fajlt a celmappabol.
 
-## Projektstruktúra
-- `main/` - Electron főfolyamat (`main.js`, `preload.js`)
-- `renderer/` - UI (HTML/CSS/JS), illusztrációk és logika
+## Projektstruktura
+- `main/` - Electron fofolyamat (`main.js`, `preload.js`)
+- `renderer/` - UI (HTML/CSS/JS), illusztraciok es logika
 - `renderer/scenes.js` - SVG jelenetek
-- `renderer/questions.js` - kérdések és válaszok
-- `run-kresz.bat` - telepítés + rebuild + futtatás
-- `clone-kresz.bat` - repo klónozás
-- `kresz-hotkey.ahk` - gyorsbillentyű (AutoHotkey v2)
+- `renderer/questions.js` - kerdesek es valaszok
+- `run-kresz.bat` - telepites + rebuild + futtatas
+- `update-kresz.bat` - repo frissites + ujratelepites
+- `clone-kresz.bat` - repo klonozas
+- `kresz-hotkey.ahk` - gyorsbillentyu (AutoHotkey v2)
 
-## Új feladat hozzáadása
-1. Készíts új SVG jelenetet a `renderer/scenes.js` fájlban (új `sceneId`).
-2. Adj hozzá új kérdést a `renderer/questions.js` fájlban, a `sceneId` hivatkozásával.
-3. Töltsd ki a leírást és a definíciókat a pontos, félreérthetetlen magyarázathoz.
+## Uj feladat hozzaadasa
+1. Keszits uj SVG jelenetet a `renderer/scenes.js` fajlban (uj `sceneId`).
+2. Adj hozza uj kerdest a `renderer/questions.js` fajlban, a `sceneId` hivatkozasaval.
+3. Toltsd ki a leirast es a definiciokat a pontos, felreerthetetlen magyarazathoz.
 
 ## Licenc
-- A projekt MIT licenc alatt áll - lásd `LICENSE`.
-- Harmadik féltől származó összetevők - lásd `THIRD_PARTY_NOTICES.md`.
+- A projekt MIT licenc alatt all - lasd `LICENSE`.
+- Harmadik feltol szarmazo osszetevok - lasd `THIRD_PARTY_NOTICES.md`.
 
-## Megjegyzés a betűtípusokról
-A felület Google Fonts betűtípusokat használ (IBM Plex Sans, Space Grotesk). Ha offline környezetben futtatnád, érdemes ezeket lokálisan beágyazni.
+## Megjegyzes a betutipusokrol
+A felulet Google Fonts betutipusokat hasznal (IBM Plex Sans, Space Grotesk). Ha offline kornyezetben futtatnad, erdemes ezeket lokalisan beagyazni.

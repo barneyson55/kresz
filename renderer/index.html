@@ -1,9 +1,9 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>KRESZ Oktató - Interaktív Gyakorlat</title>
+    <title>KRESZ Oktato - Interaktiv Gyakorlat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,22 +17,22 @@
       <header class="topbar">
         <div class="topbar-left">
           <div class="pill" id="progress">1/1</div>
-          <div class="pill pill-muted" id="type">Egyirányú</div>
+          <div class="pill pill-muted" id="type">Egyiranyu</div>
           <div class="pill pill-muted" id="difficulty">alap</div>
-          <div class="pill pill-muted" id="pace">normál</div>
+          <div class="pill pill-muted" id="pace">normal</div>
           <div class="pill pill-timer is-hidden" id="timer">00:00</div>
         </div>
-        <h1 class="question" id="question">Kérdés</h1>
+        <h1 class="question" id="question">Kerdes</h1>
         <div class="topbar-right">
-          <button class="ghost" id="retry" type="button">Újrapróba</button>
+          <button class="ghost" id="retry" type="button">Ujraproba</button>
         </div>
       </header>
 
       <main class="stage">
         <section class="scene-card" id="scene-card">
           <div class="scene-header">
-            <span class="scene-title">Valódi helyzet</span>
-            <span class="scene-hint">Válassz 1-4 billentyűvel is</span>
+            <span class="scene-title">Valodi helyzet</span>
+            <span class="scene-hint">Valassz 1-4 billentyuvel is</span>
           </div>
           <div class="scene-canvas" id="scene"></div>
           <div class="scene-legend" id="legend"></div>
@@ -40,18 +40,47 @@
 
         <aside class="options-card" id="options-card">
           <div class="options-header">
-            <h2>Válaszlehetőségek</h2>
-            <span class="options-sub">Hibás válasz után újra próbálható</span>
+            <h2>Valaszlehetosegek</h2>
+            <span class="options-sub">Hibas valasz utan ujra probalhato</span>
           </div>
           <div class="options-list" id="options"></div>
           <div class="feedback" id="feedback"></div>
         </aside>
       </main>
 
+      <section class="summary-card is-hidden" id="summary-card">
+        <div class="summary-header">
+          <h2>Osszegzes</h2>
+          <p class="summary-sub">10 kerdeses gyakorlatsor eredmenye</p>
+        </div>
+        <div class="summary-metrics">
+          <div class="metric">
+            <span>Helyes valaszok</span>
+            <strong id="summary-correct">0/10</strong>
+          </div>
+          <div class="metric">
+            <span>Helyes elsore</span>
+            <strong id="summary-first">0/10</strong>
+          </div>
+          <div class="metric">
+            <span>Hibas probalkozasok</span>
+            <strong id="summary-wrong">0</strong>
+          </div>
+          <div class="metric">
+            <span>Idotullepesek</span>
+            <strong id="summary-timeouts">0</strong>
+          </div>
+        </div>
+        <div class="summary-list" id="summary-list"></div>
+        <div class="summary-actions">
+          <button class="primary" id="restart" type="button">Ujrakezdes</button>
+        </div>
+      </section>
+
       <footer class="details-card" id="details-card">
         <div class="details-header">
-          <h3>Helyzet leírása</h3>
-          <span class="details-sub">Időben és térben elhelyezve, definíciókkal</span>
+          <h3>Helyzet leirasa</h3>
+          <span class="details-sub">Idoben es terben elhelyezve, definiciokkal</span>
         </div>
         <p class="details-text" id="description"></p>
         <div class="definitions" id="definitions"></div>

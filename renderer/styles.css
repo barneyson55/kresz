@@ -277,6 +277,101 @@ body {
   gap: 12px;
 }
 
+.summary-card {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.summary-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.summary-sub {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metric span {
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.metric strong {
+  font-size: 20px;
+}
+
+.summary-list {
+  display: grid;
+  gap: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 14px;
+}
+
+.summary-title {
+  font-weight: 600;
+}
+
+.summary-status {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.summary-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(196, 106, 51, 0.2);
+}
+
 .details-header {
   display: flex;
   justify-content: space-between;
@@ -327,6 +422,11 @@ body {
 }
 
 .is-hidden {
+  display: none;
+}
+
+.app.is-summary .stage,
+.app.is-summary .details-card {
   display: none;
 }
 
@@ -420,6 +520,10 @@ body {
   fill: #8cc48c;
 }
 
+.scene-canvas svg .car-d {
+  fill: #e07b66;
+}
+
 .scene-canvas svg .car-label {
   fill: #1f1d1a;
   font-family: 'Space Grotesk', sans-serif;
@@ -433,8 +537,41 @@ body {
   stroke-width: 4;
 }
 
+.scene-canvas svg .sign-stop {
+  fill: #b54a3a;
+  stroke: #f2ede1;
+  stroke-width: 4;
+}
+
+.scene-canvas svg .sign-stop-text {
+  fill: #f2ede1;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.scene-canvas svg .sign-no-entry {
+  fill: #b54a3a;
+  stroke: #f2ede1;
+  stroke-width: 4;
+}
+
+.scene-canvas svg .sign-no-entry-bar {
+  stroke: #f2ede1;
+  stroke-width: 6;
+}
+
 .scene-canvas svg .crosswalk {
   fill: #f2ede1;
+}
+
+.scene-canvas svg .bike-lane {
+  fill: rgba(44, 139, 111, 0.25);
+}
+
+.scene-canvas svg .bike-lane-line {
+  stroke: #2c8b6f;
+  stroke-width: 4;
 }
 
 .scene-canvas svg .rail {
@@ -447,10 +584,35 @@ body {
   stroke-width: 4;
 }
 
+.scene-canvas svg .merge-line {
+  stroke: #c8c0b2;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
 .scene-canvas svg .pedestrian {
   fill: #c46a33;
 }
 
 .scene-canvas svg .bike {
   fill: #2c8b6f;
+}
+
+.scene-canvas svg .hazard {
+  fill: #f0b45d;
+  stroke: #1d1c19;
+  stroke-width: 3;
+}
+
+.scene-canvas svg .hazard-text {
+  fill: #1d1c19;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.scene-canvas svg .light {
+  fill: #f2ede1;
+  stroke: #1d1c19;
+  stroke-width: 2;
 }
