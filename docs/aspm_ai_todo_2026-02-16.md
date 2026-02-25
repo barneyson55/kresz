@@ -7,7 +7,7 @@ Top 3 actionable productization tasks for this rotation:
 
 1. [ ] Add a deterministic CI pipeline (lint/test/build) and expose status badge in README for buyer confidence.
 2. [ ] Create one end-to-end smoke test for the primary user journey and wire it into CI.
-3. [ ] Define a release checklist with version bump, QA gate, rollback plan, and release notes template.
+3. [x] Define a release checklist with version bump, QA gate, rollback plan, and release notes template. (`docs/release_checklist.md`)
 
 Execution note:
 - Keep tasks concrete, buyer-facing, and measurable.

@@ -12,4 +12,4 @@ Minimal AI task scaffold for kresz.
 - [x] Portfolio sweep triage logged on branch `main` (pre-sweep repo state: `clean`).
 - [x] First unchecked item in `docs/user_todo.md`: file-missing.
 - [x] Top-level unchecked count in `docs/ai_todo.md` at sweep start: 0.
-- Next step: Promote one concrete repo task into a top-level checkbox and execute it in the next cycle.
+- [x] Promoted and completed one concrete repo task: release checklist created (`docs/release_checklist.md`).
