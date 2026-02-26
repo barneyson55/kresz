@@ -13,3 +13,8 @@ Minimal AI task scaffold for kresz.
 - [x] First unchecked item in `docs/user_todo.md`: file-missing.
 - [x] Top-level unchecked count in `docs/ai_todo.md` at sweep start: 0.
 - [x] Promoted and completed one concrete repo task: release checklist created (`docs/release_checklist.md`).
+
+<!-- ASPM_SWEEP_2026-02-26 -->
+## ASPM Sweep 2026-02-26
+- [x] First unchecked item in `docs/user_todo.md`: file-missing.
+- [x] Promoted and completed one concrete repo task from `docs/aspm_ai_todo_2026-02-16.md`: deterministic CI + README badge.

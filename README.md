@@ -1,5 +1,7 @@
 # KRESZ Oktato ? interaktiv Electron alkalmazas
 
+![CI](https://github.com/barneyson55/kresz/actions/workflows/ci.yml/badge.svg)
+
 Magyar nyelvu, vizualis, minimalista KRESZ-oktato app, amely a bonyolultabb egyiranyu keresztezodeseket es gyors utemu kozlekedesi helyzeteket gyakoroltatja. A feladatok ujraprobalhatok, a helyes valasz automatikus tovabblepest indit.
 
 ## Fo jellemzok
